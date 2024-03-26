@@ -15,6 +15,10 @@ The Open Drone Database is a community-driven effort aimed at creating an expans
 
 For each drone, the source of information is provided. It may come from a company's catalog (for instance, acquired at an exhibition) or directly from the official website. The goal of this open-access database is to facilitate research in the field of drones and to expedite the industry's further development. If you wish to add new drones to the database, please submit a pull request, ensuring that you accurately provide the source and correct data in your files (note that all PRs will be thoroughly reviewed before merging into the master branch). Should you be a product owner and have any inquiries about this database, please do not hesitate to contact us at odd@pr-dc.com.
 
+- - -
+
+In the process of adding new drones to the database you can use the Drone Data Form available at: https://pr-dc.com/odd-form/
+
 ## License
 Copyright (C) 2024 PR-DC <info@pr-dc.com>
 

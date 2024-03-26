@@ -1,0 +1,19 @@
+{
+  "name": "ODONAT",
+  "company": "PR-DC",
+  "description": "The ODONAT drone is a rotary-wing kamikaze drone with a range of up to 15 km, designed and manufactured by the PR-DC company in a quadcopter configuration.  It is armed with a 60 mm diameter aerial bomb (like Krušik M73), which is quickly and easily attached to the aircraft's structure before launch. The flight can be fully autonomous according to a predetermined path and target coordinates, or manually guided using a camera.",
+  "airframe-type": "Rotary-wing",
+  "mission-type": "Armed - single use",
+  "rotors-number": "4",
+  "powertrain": "BLDC electric motors",
+  "power-source": "Lithium based battery",
+  "dimensions": "660 x 470 x 235",
+  "transport-dimensions": "620 x 480 x 290",
+  "maximum-takeoff-mass": "4",
+  "optimal-payload-mass": "1.3",
+  "equipment": "FPV camera",
+  "remote-controller": "IKA-CTRL with custom FlightControl Application, simultaneous use of multiple controllers (control and monitor modes, separate armament control)",
+  "mission-radius": "15000",
+  "amament": "Aerial bomb with a diameter of 60 mm\nBomb length with fuze: 286 mm\nFuze type: impact, superquick action, specially designed for drone use\nFuze safety: two safety pins (transport and release)\nMass of a single bomb with fuze: 1350 g\nExplosive charge: trotyl (TNT)\nMass of explosive charge: 250 g\nBlast radius (1 penetration / m2): 10 m\nSafe operation temperature range: -30ºC to +50ºC",
+  "data-source": "ODONAT_A4"
+}

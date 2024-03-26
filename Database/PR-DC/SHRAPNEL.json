@@ -1,0 +1,22 @@
+{
+  "name": "SHRAPNEL",
+  "company": "PR-DC",
+  "description": "The SHRAPNEL drone is a fixed-wing loitering munition designed and produced by PR-DC with a unique high-performance box wing. The aircraft is made of composite materials, primarily of carbon-fiber-reinforced polymers. It is armed with a 81 mm aerial bomb (e.g. Krušik M72), which is easily slided through the aircraft frame and fixed before launch. Flight can be programmed to be fully autonomous according to target coordinates, or manually guided using a camera.",
+  "airframe-type": "Fixed-wing",
+  "mission-type": "Armed - single use",
+  "rotors-number": "1",
+  "powertrain": "BLDC electric motors",
+  "power-source": "Lithium based battery",
+  "dimensions": "1200 x 1070 x 315",
+  "transport-dimensions": "1240 x 310 x 290",
+  "main-structure-material": "Carbon-fiber reinforced polymer",
+  "maximum-takeoff-mass": "10",
+  "optimal-payload-mass": "4",
+  "equipment": "FPV camera",
+  "remote-controller": "IKA-CTRL with custom FlightControl Application, simultaneous use of multiple controllers (control and monitor modes, separate armament control)",
+  "mission-radius": "60000",
+  "flight-time": "60",
+  "cruise-speed": "125",
+  "amament": "Aerial bomb with a diameter of 81 mm\nBomb length with fuze: 470 mm\nFuze type: impact, superquick action, specially designed for drone use\nFuze safety: two safety pins (transport and release)\nMass of a single bomb with fuze: 4100 g\nExplosive charge: trotyl (TNT)\nMass of explosive charge: 900 g\nBlast radius (1 penetration / m2): 18 m\nSafe operation temperature range: -46ºC to +63ºC",
+  "data-source": "SHRAPNEL_A4"
+}

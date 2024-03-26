@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>OpenDroneDatabase - Drone Data Form</title>
+<meta charset="UTF-8">
+<meta name="author" content="Miloš Petrašinović <mpetrasinovic@pr-dc.com>">
+<meta name="description" content="The Open Drone Database - Drone Data Form gathers detailed drone specifications, converting inputs into a JSON file for seamless database integration.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" sizes="96x96" href="https://pr-dc.com/web/img/github/OpenDroneDatabase_logo.svg">
+<style>
+  body {
+    font-family: Helvetica;
+    background: #eee;
+    font-size: 16px;
+  }
+  h1 {
+    text-align: center;
+  }
+  
+  h1 span {
+    color: #2e85c7;
+  }
+  
+  #load-form {
+    width: 500px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  
+  #load-form input {
+    width: -webkit-fill-available;
+  }
+  
+  #data-form {
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    background: #fff;
+    margin-bottom: 100px;
+  }
+  
+  #data-form label {
+    padding-bottom: 4px;
+    display: inline-block;
+    color: #666;
+    font-weight: bold;
+  }
+  
+  #data-form input, #data-form select, #data-form textarea {
+    width: -webkit-fill-available;
+    margin-bottom: 10px; 
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #data-form input:focus, #data-form select:focus, #data-form textarea:focus {
+    border: 2px solid #2e85c7;
+  }
+  
+  #data-form input[type="submit"], #load-form input::file-selector-button {
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+    background: #2e85c7;
+    border: 2px solid #2e85c7;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  #load-form input::file-selector-button {
+    display: inline-block;
+    width: 150px;
+    margin-right: 20px;
+  }
+  
+  #data-form input[type="submit"]:hover, #load-form input::file-selector-button:hover {
+    background: #fff;
+    color: #2e85c7;
+  }
+  
+</style>
+</head>
+<body>
+
+<h1>Open<span>Drone</span>Database - Drone Data Form</h1>
+
+<p align="center">
+  <img src="https://pr-dc.com/web/img/github/OpenDroneDatabase_logo.svg" width="150">
+</p>
+
+
+<form id="load-form">
+  <input type="file" id="file-input" accept=".json" value="Load data">
+</form>
+
+<form id="data-form" onsubmit="return saveForm(event)">
+  <label for="name">Name:</label><br>
+  <input type="text" name="name"><br>
+  
+  <label for="company">Company:</label><br>
+  <input type="text" name="company"><br>
+  
+  <label for="description">Description:</label><br>
+  <textarea name="description" rows="3"></textarea><br>
+
+  <label for="airframe-type">Airframe type:</label><br>
+  <select name="airframe-type">
+    <option value="Rotary-wing">Rotary-wing</option>
+    <option value="Fixed-wing">Fixed-wing</option>
+    <option value="Mixed-wing">Mixed-wing</option>
+  </select><br>
+  
+  <label for="mission-type">Mission type:</label><br>
+  <select name="mission-type">
+    <option value="Unarmed">Unarmed</option>
+    <option value="Armed - multiple use">Armed - multiple use</option>
+    <option value="Armed - single use">Armed - single use</option>
+  </select><br>
+  
+  <label for="rotors-number">Number of rotors:</label><br>
+  <input type="text" name="rotors-number"><br>
+  
+  <label for="powertrain">Powertrain:</label><br>
+  <input type="text" name="powertrain"><br>
+  
+  <label for="power-source">Power source:</label><br>
+  <input type="text" name="power-source"><br>
+
+  <label for="propelelr-diameter">Propeller diameter [mm]:</label><br>
+  <input type="text" name="propelelr-diameter"><br>
+
+  <label for="propelelr-pitch">Propeller pitch [mm]:</label><br>
+  <input type="text" name="propelelr-pitch"><br>
+
+  <label for="total-power">Total power [kW]:</label><br>
+  <input type="text" name="total-power"><br>
+
+  <label for="dimensions">Dimensions [mm]:</label><br>
+  <input type="text" name="dimensions"><br>
+
+  <label for="transport-dimensions">Transport package dimensions [mm]:</label><br>
+  <input type="text" name="transport-dimensions"><br>
+
+  <label for="main-structure-material">Main structure material:</label><br>
+  <input type="text" name="main-structure-material"><br>
+
+  <label for="maximum-takeoff-mass">Maximum takeoff mass [kg]:</label><br>
+  <input type="text" name="maximum-takeoff-mass"><br>
+
+  <label for="optimal-payload-mass">Optimal payload mass [kg]:</label><br>
+  <input type="text" name="optimal-payload-mass"><br>
+
+  <label for="battery-mass">Battery mass [kg]:</label><br>
+  <input type="text" name="battery-mass"><br>
+
+  <label for="equipment">Equipment:</label><br>
+  <textarea name="equipment" rows="3"></textarea><br>
+
+  <label for="remote-controller">Remote controller:</label><br>
+  <input type="text" name="remote-controller"><br>
+
+  <label for="mission-radius">Mission radius [m]:</label><br>
+  <input type="text" name="mission-radius"><br>
+
+  <label for="max-flight-distance">Max flight distance [m]:</label><br>
+  <input type="text" name="max-flight-distance"><br>
+  
+  <label for="operating-altitude">Operating altitude [m]:</label><br>
+  <input type="text" name="operating-altitude"><br>
+  
+  <label for="flight-ceiling">Flight ceiling [m]:</label><br>
+  <input type="text" name="flight-ceiling"><br>
+
+  <label for="flight-time">Flight time [min]:</label><br>
+  <input type="text" name="flight-time"><br>
+
+  <label for="top-speed">Top speed [km/h]:</label><br>
+  <input type="text" name="top-speed"><br>
+
+  <label for="cruise-speed">Cruise speed [km/h]:</label><br>
+  <input type="text" name="cruise-speed"><br>
+
+  <label for="climb-rate">Climb rate [m/s]:</label><br>
+  <input type="text" name="climb-rate"><br>
+
+  <label for="wind-resistence">Wind resistence [km/h]:</label><br>
+  <input type="text" name="wind-resistence"><br>
+  
+  <label for="amament">Armament:</label><br>
+  <textarea name="amament" rows="3"></textarea><br>
+
+  <label for="data-source">Data source:</label><br>
+  <input type="text" name="data-source"><br>
+  
+  <br>
+  <input type="submit" value="Save">
+</form>
+
+<script>
+function download(content, fileName, contentType) {
+  var a = document.createElement("a");
+  var file = new Blob([content], {type: contentType});
+  var url = URL.createObjectURL(file);
+  a.href = url;
+  a.download = fileName;
+  document.body.appendChild(a);
+  a.click();
+  URL.revokeObjectURL(url);
+  document.body.removeChild(a);
+}
+
+function saveForm(e) {
+  e.preventDefault();
+  var form = document.getElementById('data-form');
+  var data = {};
+
+  for(var element of form.elements) {
+    if(element.name && element.type !== 'button' && element.type !== 'submit' && element.value != '') {
+      data[element.name] = element.value;
+    }
+  }
+  
+  if(!('name' in data)) {
+    alert('You must enter drone name!');
+  } else if(!('data-source' in data)) {
+    alert('You must enter drone data source!');
+  } else {
+    download(JSON.stringify(data, null, 2), data['name']+'.json', 'text/plain');
+  }
+  
+  return false;
+}
+
+document.getElementById('file-input').addEventListener('change', function(event) {
+  var fileReader = new FileReader();
+  fileReader.onload = function(event) {
+    try {
+      var data = JSON.parse(event.target.result);
+      var form = document.getElementById('data-form');
+      for(var element of form.elements) {
+        if(element.name && element.type !== 'button' && element.type !== 'submit' && element.name in data) {
+          element.value = data[element.name];
+        }
+      }
+    } catch (error) {
+      alert('Error parsing JSON: ' + error.message);
+    }
+  };
+  fileReader.readAsText(event.target.files[0]);
+});
+</script>
+
+</body>
+</html>
