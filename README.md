@@ -8,7 +8,7 @@
   <img src="https://pr-dc.com/web/img/github/OpenDroneDatabase_logo_full.svg" width="600">
 </p>
 
-The** Open Drone Database** is a community-driven effort aimed at creating an expansive, open-access database detailing the specifications of various drones available on the market.
+The **Open Drone Database** is a community-driven effort aimed at creating an expansive, open-access database detailing the specifications of various drones available on the market.
 
 - - -
 
