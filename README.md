@@ -8,12 +8,13 @@
   <img src="https://pr-dc.com/web/img/github/OpenDroneDatabase_logo_full.svg" width="600">
 </p>
 
-The Open Drone Database is a community-driven effort aimed at creating an expansive, open-access database detailing the specifications of various drones available on the market.
+The** Open Drone Database** is a community-driven effort aimed at creating an expansive, open-access database detailing the specifications of various drones available on the market.
 
 - - -
 
+The goal of this open-access database is to facilitate research in the field of drones and to expedite the industry's further development. If you wish to add new drones to the database, please submit a pull request, ensuring that you accurately provide the source and correct data in your files (note that all PRs will be thoroughly reviewed before merging into the master branch). Should you be a product owner and have any inquiries about this database, please do not hesitate to contact us at odd@pr-dc.com.
 
-For each drone, the source of information is provided. It may come from a company's catalog (for instance, acquired at an exhibition) or directly from the official website. The goal of this open-access database is to facilitate research in the field of drones and to expedite the industry's further development. If you wish to add new drones to the database, please submit a pull request, ensuring that you accurately provide the source and correct data in your files (note that all PRs will be thoroughly reviewed before merging into the master branch). Should you be a product owner and have any inquiries about this database, please do not hesitate to contact us at odd@pr-dc.com.
+It is essential to acknowledge that the information cataloged within this database is sourced from official and verifiable origins such as company catalogs (for instance, acquired at an exhibition) or direct company websites and is employed strictly under the **fair use principle**. 
 
 - - -
 
